@@ -1,0 +1,75 @@
+body{
+	background 	: url(../Images/rosietech.jpg) center center fixed no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@font-face {
+  font-family: font1;
+  src: url(../fonts/stronger.ttf);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(../fonts/rebel.ttf);
+}
+
+
+.container{
+	position: absolute;
+	bottom: 0;
+	background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.3);
+}
+
+h1{
+	color: white;
+	font-size: 80px;
+	font-family: font1;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+h2{
+	color: white;
+	font-size: 50px;
+	font-family: font1;
+	font-weight: bolder;
+}
+
+nav{
+	width 		: 45%;
+	position 	: fixed;
+	top 		: 0px;
+	right 		: 0px;
+	z-index 	: 10;
+}
+
+nav ul{
+	list-style	:none;
+	padding 	: 0px;
+	margin 		: 0px;
+	background 	: #c0c0c0
+
+}
+
+nav ul li{
+	color 	: white;
+	width 	: 32%;
+	float	: right;
+	text-align 	: center;
+	padding-top : 10px;
+	padding-bottom	: 10px;
+	font-size	: 25px;
+	font-family: font2;
+
+}
+
+nav ul li:hover{
+	background : none;
+	color : white;
+	font-weight	: bolder;
+	font-size	: 40px;
+	font-family: font1;
+}
