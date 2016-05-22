@@ -2,26 +2,43 @@
 <html>
   <head>
     <title>Woman Code</title>
-
-	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css"/>
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="css/custom.css"/>
-
+    	
   </head>
 
   <body>
 
-  	<div class="container">
-  
-  		<h1>Woman Code</h1>
-  		<h2>Women helping women learn to code.</h2>
-  	</div>
+  	<div class="row">
+		<div class="col-md-6">
+
+			<form action="process.php" method="POST" id="volForm">
+				<h3> Please fill out to volunteer</h3>
+				<div class="input-group">
+					<input type="text" class="form-control inputs" placeholder="First name" aria-describedby="basic-addon1" id="fn" name="fn">
+				</div>
+				<div class="input-group">
+					<input type="text" class="form-control inputs" placeholder="Last name" aria-describedby="basic-addon1" id="ln" name="ln">
+				</div>
+				<div class="input-group">
+					<input type="text" class="form-control inputs" placeholder="Email" aria-describedby="basic-addon1" id="email" name="email">
+				</div>
+				<div class="input-group">
+					<input type="text" class="form-control inputs" placeholder="Zip Code" aria-describedby="basic-addon1" id="zip" name="zip">
+				</div>
+				 <div class="form-group">
+				      <label for="sel1">Select list (select one):</label>
+				      <select class="form-control" id="volunteerTask" name="volunteerTask">
+				        <option>Instructor</option>
+				        <option>Instructor's Assistant</option>
+				        <option>Administrative</option>>
+				      </select>
+				</div>
+				<button type="button" class="btn btn-success" id="volBtn" name="volBtn">Volunteer</button>
+			</form>
+
+		</div>
+			
+	</div>
+	
 
 	<div class="container fluid">
 		<nav>
@@ -38,5 +55,91 @@
 		</nav>
 
 	</div>
+
+
+  	<div class="container">
+  
+  		<h1>Woman Code</h1>
+  		<h2>Women helping women learn to code.</h2>
+  	</div>
+
+  	<div class="row">
+			<div class="col-md-12 nopadding nomargin" >
+
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    
+				    <div class="item active">
+				      <img src="images/techwomen.jpg" alt="">
+				      <div class="carousel-caption">
+				        Learn to code at your own pace!
+				      </div>
+				    </div>
+
+				    <div class="item">
+				      <img src="images/womencode.jpg"" alt="...">
+				      <div class="carousel-caption">
+				        Form study groups!
+				      </div>
+				    </div>
+
+				    <div class="item">
+				      <img src="images/techwoman.jpg" alt="">
+				      <div class="carousel-caption">
+				        Join our weekly hackathons!
+				      </div>
+				    </div>
+
+				  
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+
+			</div>
+		</div>
+
+
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css"/>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!--JQUERY-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- Media query for medium browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 1px) and (max-width: 960px)" href="css/mobile.css">
+
+	<!-- Media query for full browser width -->
+	<link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+
+	<!-- Prevent smartphones from scaling pages down -->
+	<meta name="viewport" content="initial-scale=1">
+
+
   </body>
 </html>
