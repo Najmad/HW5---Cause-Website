@@ -28,7 +28,7 @@
 	
 	<div class="col-md-6">
 
-				<form>
+				<form action="process.php" method="POST" id="subForm">
 				<h3>Help fund our workshops!</h3>
 					<div class="input-group">
 					<label for="sel1">First Name:</label>
@@ -38,6 +38,7 @@
 					<label for="sel1">Last Name:</label>
 					<input type="text" class="form-control inputs" placeholder="Last name" aria-describedby="basic-addon1" id="ln" name="ln">
 					</div>
+					
 					<div class="input-group">
 					<label for="sel1">Email Address:</label>
 					<input type="text" class="form-control inputs" placeholder="Email" aria-describedby="basic-addon1" id="email" name="email">
@@ -93,6 +94,15 @@
 
 	<!-- Prevent smartphones from scaling pages down -->
 	<meta name="viewport" content="initial-scale=1">
+
+	<!--JQUERY-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+	<script src="js/validator.js"></script>
 
 	
   </body>
